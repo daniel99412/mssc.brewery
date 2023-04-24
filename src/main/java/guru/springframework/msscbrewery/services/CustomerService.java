@@ -6,4 +6,9 @@ import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 public interface CustomerService {
     CustomerDto getById(UUID id);
+
+    CustomerDto saveNewCustomer(CustomerDto customerDto);
+    
+    CustomerDto updateCustomer(UUID customerId, CustomerDto customerDto);
+
 }

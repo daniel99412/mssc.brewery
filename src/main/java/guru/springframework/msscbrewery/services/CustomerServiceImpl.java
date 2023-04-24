@@ -15,5 +15,16 @@ public class CustomerServiceImpl implements CustomerService {
             .id(UUID.randomUUID())
             .name("Customer 1")
             .build();
-    }   
+    }
+
+    @Override
+    public CustomerDto saveNewCustomer(CustomerDto customerDto) {
+        return CustomerDto.builder().id(UUID.randomUUID()).build();
+    }
+
+    @Override
+    public CustomerDto updateCustomer(UUID customerId, CustomerDto customerDto) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'updateCustomer'");
+    }
 }
